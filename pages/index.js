@@ -9,7 +9,7 @@ import { useRecoilState } from "recoil";
 // import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 
 export default function home() {
-  const [color, setColor] = useRecoilState(colorState);
+  const [color] = useRecoilState(colorState);
   // animate the title & use gradient
   //use recoil for calendar background img
   // use rocket img on both sides of main img
