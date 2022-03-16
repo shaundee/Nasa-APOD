@@ -69,7 +69,7 @@ export default function nasaInfo() {
         </p>
       </section>
       <p
-        className={`text-center mx-auto text-3xl  font-extrabold px-8 text-amber-200 select-none`}
+        className={`text-center mx-auto text-3xl  font-mono px-8 text-amber-200 select-none`}
       >
         {photoData.title}
       </p>

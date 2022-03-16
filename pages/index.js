@@ -1,17 +1,14 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import React, { useState, useEffect, useRef } from "react";
-import NasaInfo, { colors } from "../Components/NasaInfo";
-import { colorState, selectedDateState } from "../Atoms/dateAtom";
+
+import React, { useState } from "react";
+import NasaInfo from "../Components/NasaInfo";
+import { colorState } from "../Atoms/dateAtom";
 import { useRecoilState } from "recoil";
-import { shuffle } from "lodash";
-import { ArrowCircleRightIcon } from "@heroicons/react/solid";
 
 // CSS Modules, react-datepicker-cssmodules.css
 // import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 
 export default function home() {
-  const [vantaEffect, setVantaEffect] = useState(0);
   const [color, setColor] = useRecoilState(colorState);
   // animate the title & use gradient
   //use recoil for calendar background img
