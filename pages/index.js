@@ -1,11 +1,7 @@
 import Head from "next/head";
 import NasaInfo from "../Components/NasaInfo";
-import { colorState } from "../Atoms/dateAtom";
-import { useRecoilState } from "recoil";
 
 export default function home() {
-  const [color] = useRecoilState(colorState);
-
   // use rocket img
 
   return (
@@ -19,9 +15,6 @@ export default function home() {
       <main className=" ">
         <NasaInfo />
       </main>
-      <footer
-        className={` h-[15vh] flex w-auto bg-gradient-to-t  ${color}`}
-      ></footer>
     </div>
   );
 }
