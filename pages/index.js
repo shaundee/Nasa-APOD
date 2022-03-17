@@ -1,19 +1,12 @@
 import Head from "next/head";
-
-import React, { useState } from "react";
 import NasaInfo from "../Components/NasaInfo";
 import { colorState } from "../Atoms/dateAtom";
 import { useRecoilState } from "recoil";
 
-// CSS Modules, react-datepicker-cssmodules.css
-// import 'react-datepicker/dist/react-datepicker-cssmodules.css';
-
 export default function home() {
   const [color] = useRecoilState(colorState);
-  // animate the title & use gradient
-  //use recoil for calendar background img
-  // use rocket img on both sides of main img
-  //try custom fonts for title
+
+  // use rocket img
 
   return (
     <div className=" bg-violet-900  select-text ">

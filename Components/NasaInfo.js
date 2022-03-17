@@ -12,7 +12,7 @@ import PhotoInfo from "./photo";
 import DateSelection from "./DateSelection";
 import { buttonVariants } from "./DateSelection";
 
-const colors = [
+export const colors = [
   "from-blue-600",
   "from-green-500",
   "from-red-500",
