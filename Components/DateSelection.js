@@ -1,6 +1,6 @@
 import { CalendarIcon } from "@heroicons/react/outline";
 import { motion } from "framer-motion";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import DatePicker from "react-datepicker";
 import { useRecoilState } from "recoil";
 import { selectedDateState } from "../Atoms/dateAtom";

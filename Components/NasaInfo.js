@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { useRecoilState } from "recoil";
 import {
   colorState,
@@ -7,7 +7,7 @@ import {
 } from "../Atoms/dateAtom";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/solid";
 import { shuffle } from "lodash";
-import { motion, useCycle } from "framer-motion";
+import { motion } from "framer-motion";
 import PhotoInfo from "./photo";
 import DateSelection from "./DateSelection";
 import { buttonVariants } from "./DateSelection";
