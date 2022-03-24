@@ -20,7 +20,7 @@ export const colors = [
   "from-pink-500",
   "from-amber-700",
 ];
-export default function nasaInfo() {
+export default function NasaInfo() {
   const [photoData, setPhotoData] = useRecoilState(photoDataState);
   const [selectedDate, setSelectedDate] = useRecoilState(selectedDateState);
   const [prev, setPrev] = useState(null);
@@ -63,13 +63,13 @@ export default function nasaInfo() {
         className={`flex min-h-[15vh] flex-col  w-[100%] justify-center bg-gradient-to-b ${color} `}
       >
         <p
-          className={`text-center mx-auto lg:text-5xl  font-extrabold px-8 text-white select-none mb-5`}
+          className={`text-center mx-auto text-3xl lg:text-5xl  font-extrabold px-8 text-white select-none mb-5`}
         >
           Nasa Astronomy Picture Of The Day
         </p>
       </section>
       <p
-        className={`text-center mx-auto text-3xl  font-mono px-8 text-amber-200 select-none`}
+        className={`text-center mx-auto text-xl  lg:text-3xl font-mono px-8 text-amber-200 select-none`}
       >
         {photoData.title}
       </p>
@@ -113,7 +113,7 @@ export default function nasaInfo() {
       </p>
       <p
         className=" flex font-sans justify-center text-lg lg:px-52 px-10 xl:text-2xl 
-        p-4 text-gray-300"
+        p-4 text-gray-300 pb-8"
       >
         {photoData.explanation}
       </p>

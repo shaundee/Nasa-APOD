@@ -1,9 +1,11 @@
 import Head from "next/head";
 import NasaInfo from "../Components/NasaInfo";
+import { useRecoilState } from "recoil";
+import { colorState } from "../Atoms/dateAtom";
 
-export default function home() {
+export default function Home() {
   // use rocket img
-
+  const [color, setColor] = useRecoilState(colorState);
   return (
     <div className=" bg-violet-900  select-text ">
       <Head>
@@ -15,6 +17,9 @@ export default function home() {
       <main className=" ">
         <NasaInfo />
       </main>
+      <footer
+        className={`flex min-h-[15vh] flex-col  w-[100%] justify-center bg-gradient-to-t ${color} `}
+      ></footer>
     </div>
   );
 }

@@ -4,8 +4,8 @@ import { photoDataState } from "../Atoms/dateAtom";
 import { motion } from "framer-motion";
 import { buttonVariants } from "./DateSelection";
 
-const photoInfo = () => {
-  const [photoData, setPhotoData] = useRecoilState(photoDataState);
+const PhotoInfo = () => {
+  const [photoData] = useRecoilState(photoDataState);
 
   return (
     <motion.div variants={buttonVariants} initial="init" animate="visible">
@@ -41,4 +41,4 @@ const photoInfo = () => {
   );
 };
 
-export default photoInfo;
+export default PhotoInfo;
