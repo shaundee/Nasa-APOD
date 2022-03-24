@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 import DatePicker from "react-datepicker";
 import { useRecoilState } from "recoil";
-import { selectedDateState } from "../Atoms/dateAtom";
+import { selectedDateState } from "../atoms/dateAtom";
 
 export const buttonVariants = {
   init: {

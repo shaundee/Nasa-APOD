@@ -1,7 +1,7 @@
 import Head from "next/head";
 import NasaInfo from "../Components/NasaInfo";
 import { useRecoilState } from "recoil";
-import { colorState } from "../Atoms/dateAtom";
+import { colorState } from "../atoms/dateAtom";
 
 export default function Home() {
   // use rocket img

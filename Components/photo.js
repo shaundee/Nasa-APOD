@@ -1,6 +1,6 @@
 import React from "react";
 import { useRecoilState } from "recoil";
-import { photoDataState } from "../Atoms/dateAtom";
+import { photoDataState } from "../atoms/dateAtom";
 import { motion } from "framer-motion";
 import { buttonVariants } from "./DateSelection";
 

@@ -4,7 +4,7 @@ import {
   colorState,
   photoDataState,
   selectedDateState,
-} from "../Atoms/dateAtom";
+} from "../atoms/dateAtom";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/solid";
 import { shuffle } from "lodash";
 import { motion } from "framer-motion";
